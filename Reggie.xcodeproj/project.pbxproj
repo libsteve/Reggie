@@ -10,6 +10,11 @@
 		AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453BD51E6F49D0002A599C /* Reggie.framework */; };
 		AA453BE41E6F49D0002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453BE31E6F49D0002A599C /* ReggieTests.swift */; };
 		AA453BE61E6F49D0002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453BD81E6F49D0002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA453C081E734EF8002A599C /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C071E734EF8002A599C /* NFA.swift */; };
+		AA453C0E1E735717002A599C /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0D1E735717002A599C /* Automata.swift */; };
+		AA453C101E736F90002A599C /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0F1E736F90002A599C /* PDA.swift */; };
+		AA453C121E736FAC002A599C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C111E736FAC002A599C /* Transition.swift */; };
+		AA453C141E736FCA002A599C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C131E736FCA002A599C /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		AA453BDE1E6F49D0002A599C /* ReggieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReggieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA453BE31E6F49D0002A599C /* ReggieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReggieTests.swift; sourceTree = "<group>"; };
 		AA453BE51E6F49D0002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA453C071E734EF8002A599C /* NFA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
+		AA453C0D1E735717002A599C /* Automata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
+		AA453C0F1E736F90002A599C /* PDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
+		AA453C111E736FAC002A599C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		AA453C131E736FCA002A599C /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				AA453BD81E6F49D0002A599C /* Reggie.h */,
+				AA453C0D1E735717002A599C /* Automata.swift */,
+				AA453C131E736FCA002A599C /* Node.swift */,
+				AA453C111E736FAC002A599C /* Transition.swift */,
+				AA453C071E734EF8002A599C /* NFA.swift */,
+				AA453C0F1E736F90002A599C /* PDA.swift */,
 				AA453BD91E6F49D0002A599C /* Info.plist */,
 			);
 			path = Reggie;
@@ -148,6 +163,7 @@
 				TargetAttributes = {
 					AA453BD41E6F49D0002A599C = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					AA453BDD1E6F49D0002A599C = {
@@ -196,6 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA453C081E734EF8002A599C /* NFA.swift in Sources */,
+				AA453C141E736FCA002A599C /* Node.swift in Sources */,
+				AA453C101E736F90002A599C /* PDA.swift in Sources */,
+				AA453C121E736FAC002A599C /* Transition.swift in Sources */,
+				AA453C0E1E735717002A599C /* Automata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +340,7 @@
 		AA453BEA1E6F49D0002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -332,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = brun.steve.Reggie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -339,6 +362,7 @@
 		AA453BEB1E6F49D0002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -359,6 +383,7 @@
 		AA453BED1E6F49D0002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -371,6 +396,7 @@
 		AA453BEE1E6F49D0002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -399,6 +425,7 @@
 				AA453BEB1E6F49D0002A599C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA453BEC1E6F49D0002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +434,7 @@
 				AA453BEE1E6F49D0002A599C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
