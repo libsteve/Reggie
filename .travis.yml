@@ -2,13 +2,12 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8.3
+osx_image: beta-xcode8.3
 language: objective-c
-cache: cocoapods
-podfile: Podfile
-before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install
+
+xcode-project: Reggie.xcodeproj
+xcode_scheme: Reggie
+
 script:
-- set -o pipefail && xcodebuild test -workspace Reggie.xcworkspace -scheme Reggie | xcpretty
+- set -o pipefail && xcodebuild clean build test -project Reggie.xcodeproj -scheme Reggie | xcpretty
 - pod lib lint

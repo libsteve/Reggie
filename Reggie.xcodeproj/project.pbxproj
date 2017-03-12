@@ -46,7 +46,6 @@
 		AA453C111E736FAC002A599C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		AA453C131E736FCA002A599C /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		AA453C171E74CB9F002A599C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AA453C181E74CB9F002A599C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		AA453C191E74CB9F002A599C /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
 		AA453C1A1E74CBE4002A599C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReggieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				AA453C171E74CB9F002A599C /* LICENSE */,
-				AA453C181E74CB9F002A599C /* Podfile */,
 				AA453C1A1E74CBE4002A599C /* README.md */,
 				AA453C191E74CB9F002A599C /* Reggie.podspec */,
 				AA453BD71E6F49D0002A599C /* Reggie */,
@@ -509,7 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -523,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
