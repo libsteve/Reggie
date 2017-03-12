@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A462ADD587C72C883711AD3 /* Pods_Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */; };
 		AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453BD51E6F49D0002A599C /* Reggie.framework */; };
 		AA453BE41E6F49D0002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453BE31E6F49D0002A599C /* ReggieTests.swift */; };
 		AA453BE61E6F49D0002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453BD81E6F49D0002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,7 +15,6 @@
 		AA453C101E736F90002A599C /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0F1E736F90002A599C /* PDA.swift */; };
 		AA453C121E736FAC002A599C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C111E736FAC002A599C /* Transition.swift */; };
 		AA453C141E736FCA002A599C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C131E736FCA002A599C /* Node.swift */; };
-		ED7EAE371A3BC4D6F9655727 /* Pods_ReggieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,20 +51,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA453BD11E6F49D0002A599C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A462ADD587C72C883711AD3 /* Pods_Reggie.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AA453BDB1E6F49D0002A599C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */,
-				ED7EAE371A3BC4D6F9655727 /* Pods_ReggieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,12 +146,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA453BE91E6F49D0002A599C /* Build configuration list for PBXNativeTarget "Reggie" */;
 			buildPhases = (
-				6B01B27C2CF908AEAFD53863 /* [CP] Check Pods Manifest.lock */,
 				AA453BD01E6F49D0002A599C /* Sources */,
-				AA453BD11E6F49D0002A599C /* Frameworks */,
 				AA453BD21E6F49D0002A599C /* Headers */,
 				AA453BD31E6F49D0002A599C /* Resources */,
-				E3E5FE86E4EC5AB7DA96949D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,12 +163,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA453BEC1E6F49D0002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */;
 			buildPhases = (
-				0F43712C322832C0287B4775 /* [CP] Check Pods Manifest.lock */,
 				AA453BDA1E6F49D0002A599C /* Sources */,
 				AA453BDB1E6F49D0002A599C /* Frameworks */,
 				AA453BDC1E6F49D0002A599C /* Resources */,
-				23295CEB2EB5F7109A22E657 /* [CP] Embed Pods Frameworks */,
-				D2241ED02347E5FD2DD180D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,84 +232,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0F43712C322832C0287B4775 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		23295CEB2EB5F7109A22E657 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B01B27C2CF908AEAFD53863 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D2241ED02347E5FD2DD180D9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3E5FE86E4EC5AB7DA96949D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reggie/Pods-Reggie-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA453BD01E6F49D0002A599C /* Sources */ = {
