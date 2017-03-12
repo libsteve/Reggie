@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA453BD41E6F49D0002A599C"
+               BlueprintIdentifier = "AA453C251E74E147002A599C"
                BuildableName = "Reggie.framework"
                BlueprintName = "Reggie"
                ReferencedContainer = "container:Reggie.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA453BDD1E6F49D0002A599C"
+               BlueprintIdentifier = "AA453C2E1E74E148002A599C"
                BuildableName = "ReggieTests.xctest"
                BlueprintName = "ReggieTests"
                ReferencedContainer = "container:Reggie.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA453BD41E6F49D0002A599C"
+            BlueprintIdentifier = "AA453C251E74E147002A599C"
             BuildableName = "Reggie.framework"
             BlueprintName = "Reggie"
             ReferencedContainer = "container:Reggie.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA453BD41E6F49D0002A599C"
+            BlueprintIdentifier = "AA453C251E74E147002A599C"
             BuildableName = "Reggie.framework"
             BlueprintName = "Reggie"
             ReferencedContainer = "container:Reggie.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA453BD41E6F49D0002A599C"
+            BlueprintIdentifier = "AA453C251E74E147002A599C"
             BuildableName = "Reggie.framework"
             BlueprintName = "Reggie"
             ReferencedContainer = "container:Reggie.xcodeproj">

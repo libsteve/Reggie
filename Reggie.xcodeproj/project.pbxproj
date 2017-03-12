@@ -7,123 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453BD51E6F49D0002A599C /* Reggie.framework */; };
-		AA453BE41E6F49D0002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453BE31E6F49D0002A599C /* ReggieTests.swift */; };
-		AA453BE61E6F49D0002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453BD81E6F49D0002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA453C081E734EF8002A599C /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C071E734EF8002A599C /* NFA.swift */; };
-		AA453C0E1E735717002A599C /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0D1E735717002A599C /* Automata.swift */; };
-		AA453C101E736F90002A599C /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0F1E736F90002A599C /* PDA.swift */; };
-		AA453C121E736FAC002A599C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C111E736FAC002A599C /* Transition.swift */; };
-		AA453C141E736FCA002A599C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C131E736FCA002A599C /* Node.swift */; };
+		AA453C301E74E148002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453C261E74E147002A599C /* Reggie.framework */; };
+		AA453C351E74E148002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C341E74E148002A599C /* ReggieTests.swift */; };
+		AA453C371E74E148002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453C291E74E147002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC273351E74E422004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273301E74E422004740E7 /* Automata.swift */; };
+		AAC273361E74E422004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273311E74E422004740E7 /* NFA.swift */; };
+		AAC273371E74E422004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273321E74E422004740E7 /* Node.swift */; };
+		AAC273381E74E422004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273331E74E422004740E7 /* PDA.swift */; };
+		AAC273391E74E422004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273341E74E422004740E7 /* Transition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA453BE01E6F49D0002A599C /* PBXContainerItemProxy */ = {
+		AA453C311E74E148002A599C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AA453BCC1E6F49D0002A599C /* Project object */;
+			containerPortal = AA453C1D1E74E147002A599C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA453BD41E6F49D0002A599C;
+			remoteGlobalIDString = AA453C251E74E147002A599C;
 			remoteInfo = Reggie;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reggie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reggie/Pods-Reggie.debug.xcconfig"; sourceTree = "<group>"; };
-		8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReggieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests.release.xcconfig"; sourceTree = "<group>"; };
-		8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reggie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reggie/Pods-Reggie.release.xcconfig"; sourceTree = "<group>"; };
-		930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReggieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA453BD51E6F49D0002A599C /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA453BD81E6F49D0002A599C /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
-		AA453BD91E6F49D0002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA453BDE1E6F49D0002A599C /* ReggieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReggieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA453BE31E6F49D0002A599C /* ReggieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReggieTests.swift; sourceTree = "<group>"; };
-		AA453BE51E6F49D0002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA453C071E734EF8002A599C /* NFA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
-		AA453C0D1E735717002A599C /* Automata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
-		AA453C0F1E736F90002A599C /* PDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
-		AA453C111E736FAC002A599C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
-		AA453C131E736FCA002A599C /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		AA453C171E74CB9F002A599C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AA453C191E74CB9F002A599C /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
-		AA453C1A1E74CBE4002A599C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReggieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA453C261E74E147002A599C /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA453C291E74E147002A599C /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
+		AA453C2A1E74E147002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA453C2F1E74E148002A599C /* ReggieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReggieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA453C341E74E148002A599C /* ReggieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReggieTests.swift; sourceTree = "<group>"; };
+		AA453C361E74E148002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC273301E74E422004740E7 /* Automata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
+		AAC273311E74E422004740E7 /* NFA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
+		AAC273321E74E422004740E7 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		AAC273331E74E422004740E7 /* PDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
+		AAC273341E74E422004740E7 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		AAC2733A1E74E433004740E7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AAC2733B1E74E433004740E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AAC2733C1E74E433004740E7 /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA453BDB1E6F49D0002A599C /* Frameworks */ = {
+		AA453C221E74E147002A599C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA453C2C1E74E148002A599C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA453C301E74E148002A599C /* Reggie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		397552DF888A160A21B6E68A /* Frameworks */ = {
+		AA453C1C1E74E147002A599C = {
 			isa = PBXGroup;
 			children = (
-				BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */,
-				B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BE3B1D9E0718B34A7097B4E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */,
-				8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */,
-				930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */,
-				8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AA453BCB1E6F49D0002A599C = {
-			isa = PBXGroup;
-			children = (
-				AA453C171E74CB9F002A599C /* LICENSE */,
-				AA453C1A1E74CBE4002A599C /* README.md */,
-				AA453C191E74CB9F002A599C /* Reggie.podspec */,
-				AA453BD71E6F49D0002A599C /* Reggie */,
-				AA453BE21E6F49D0002A599C /* ReggieTests */,
-				AA453BD61E6F49D0002A599C /* Products */,
-				4BE3B1D9E0718B34A7097B4E /* Pods */,
-				397552DF888A160A21B6E68A /* Frameworks */,
+				AAC2733A1E74E433004740E7 /* LICENSE */,
+				AAC2733B1E74E433004740E7 /* README.md */,
+				AAC2733C1E74E433004740E7 /* Reggie.podspec */,
+				AA453C281E74E147002A599C /* Reggie */,
+				AA453C331E74E148002A599C /* ReggieTests */,
+				AA453C271E74E147002A599C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AA453BD61E6F49D0002A599C /* Products */ = {
+		AA453C271E74E147002A599C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA453BD51E6F49D0002A599C /* Reggie.framework */,
-				AA453BDE1E6F49D0002A599C /* ReggieTests.xctest */,
+				AA453C261E74E147002A599C /* Reggie.framework */,
+				AA453C2F1E74E148002A599C /* ReggieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA453BD71E6F49D0002A599C /* Reggie */ = {
+		AA453C281E74E147002A599C /* Reggie */ = {
 			isa = PBXGroup;
 			children = (
-				AA453BD81E6F49D0002A599C /* Reggie.h */,
-				AA453C0D1E735717002A599C /* Automata.swift */,
-				AA453C131E736FCA002A599C /* Node.swift */,
-				AA453C111E736FAC002A599C /* Transition.swift */,
-				AA453C071E734EF8002A599C /* NFA.swift */,
-				AA453C0F1E736F90002A599C /* PDA.swift */,
-				AA453BD91E6F49D0002A599C /* Info.plist */,
+				AA453C291E74E147002A599C /* Reggie.h */,
+				AA453C2A1E74E147002A599C /* Info.plist */,
+				AAC273301E74E422004740E7 /* Automata.swift */,
+				AAC273311E74E422004740E7 /* NFA.swift */,
+				AAC273321E74E422004740E7 /* Node.swift */,
+				AAC273331E74E422004740E7 /* PDA.swift */,
+				AAC273341E74E422004740E7 /* Transition.swift */,
 			);
 			path = Reggie;
 			sourceTree = "<group>";
 		};
-		AA453BE21E6F49D0002A599C /* ReggieTests */ = {
+		AA453C331E74E148002A599C /* ReggieTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA453BE31E6F49D0002A599C /* ReggieTests.swift */,
-				AA453BE51E6F49D0002A599C /* Info.plist */,
+				AA453C341E74E148002A599C /* ReggieTests.swift */,
+				AA453C361E74E148002A599C /* Info.plist */,
 			);
 			path = ReggieTests;
 			sourceTree = "<group>";
@@ -131,24 +110,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AA453BD21E6F49D0002A599C /* Headers */ = {
+		AA453C231E74E147002A599C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453BE61E6F49D0002A599C /* Reggie.h in Headers */,
+				AA453C371E74E148002A599C /* Reggie.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA453BD41E6F49D0002A599C /* Reggie */ = {
+		AA453C251E74E147002A599C /* Reggie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA453BE91E6F49D0002A599C /* Build configuration list for PBXNativeTarget "Reggie" */;
+			buildConfigurationList = AA453C3A1E74E148002A599C /* Build configuration list for PBXNativeTarget "Reggie" */;
 			buildPhases = (
-				AA453BD01E6F49D0002A599C /* Sources */,
-				AA453BD21E6F49D0002A599C /* Headers */,
-				AA453BD31E6F49D0002A599C /* Resources */,
+				AA453C211E74E147002A599C /* Sources */,
+				AA453C221E74E147002A599C /* Frameworks */,
+				AA453C231E74E147002A599C /* Headers */,
+				AA453C241E74E147002A599C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -156,75 +136,75 @@
 			);
 			name = Reggie;
 			productName = Reggie;
-			productReference = AA453BD51E6F49D0002A599C /* Reggie.framework */;
+			productReference = AA453C261E74E147002A599C /* Reggie.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AA453BDD1E6F49D0002A599C /* ReggieTests */ = {
+		AA453C2E1E74E148002A599C /* ReggieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA453BEC1E6F49D0002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */;
+			buildConfigurationList = AA453C3D1E74E148002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */;
 			buildPhases = (
-				AA453BDA1E6F49D0002A599C /* Sources */,
-				AA453BDB1E6F49D0002A599C /* Frameworks */,
-				AA453BDC1E6F49D0002A599C /* Resources */,
+				AA453C2B1E74E148002A599C /* Sources */,
+				AA453C2C1E74E148002A599C /* Frameworks */,
+				AA453C2D1E74E148002A599C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA453BE11E6F49D0002A599C /* PBXTargetDependency */,
+				AA453C321E74E148002A599C /* PBXTargetDependency */,
 			);
 			name = ReggieTests;
 			productName = ReggieTests;
-			productReference = AA453BDE1E6F49D0002A599C /* ReggieTests.xctest */;
+			productReference = AA453C2F1E74E148002A599C /* ReggieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AA453BCC1E6F49D0002A599C /* Project object */ = {
+		AA453C1D1E74E147002A599C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Steve Brunwasser";
 				TargetAttributes = {
-					AA453BD41E6F49D0002A599C = {
+					AA453C251E74E147002A599C = {
 						CreatedOnToolsVersion = 8.3;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					AA453BDD1E6F49D0002A599C = {
+					AA453C2E1E74E148002A599C = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = AA453BCF1E6F49D0002A599C /* Build configuration list for PBXProject "Reggie" */;
+			buildConfigurationList = AA453C201E74E147002A599C /* Build configuration list for PBXProject "Reggie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AA453BCB1E6F49D0002A599C;
-			productRefGroup = AA453BD61E6F49D0002A599C /* Products */;
+			mainGroup = AA453C1C1E74E147002A599C;
+			productRefGroup = AA453C271E74E147002A599C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA453BD41E6F49D0002A599C /* Reggie */,
-				AA453BDD1E6F49D0002A599C /* ReggieTests */,
+				AA453C251E74E147002A599C /* Reggie */,
+				AA453C2E1E74E148002A599C /* ReggieTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA453BD31E6F49D0002A599C /* Resources */ = {
+		AA453C241E74E147002A599C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA453BDC1E6F49D0002A599C /* Resources */ = {
+		AA453C2D1E74E148002A599C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,38 +214,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA453BD01E6F49D0002A599C /* Sources */ = {
+		AA453C211E74E147002A599C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453C081E734EF8002A599C /* NFA.swift in Sources */,
-				AA453C141E736FCA002A599C /* Node.swift in Sources */,
-				AA453C101E736F90002A599C /* PDA.swift in Sources */,
-				AA453C121E736FAC002A599C /* Transition.swift in Sources */,
-				AA453C0E1E735717002A599C /* Automata.swift in Sources */,
+				AAC273391E74E422004740E7 /* Transition.swift in Sources */,
+				AAC273371E74E422004740E7 /* Node.swift in Sources */,
+				AAC273381E74E422004740E7 /* PDA.swift in Sources */,
+				AAC273351E74E422004740E7 /* Automata.swift in Sources */,
+				AAC273361E74E422004740E7 /* NFA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA453BDA1E6F49D0002A599C /* Sources */ = {
+		AA453C2B1E74E148002A599C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453BE41E6F49D0002A599C /* ReggieTests.swift in Sources */,
+				AA453C351E74E148002A599C /* ReggieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA453BE11E6F49D0002A599C /* PBXTargetDependency */ = {
+		AA453C321E74E148002A599C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA453BD41E6F49D0002A599C /* Reggie */;
-			targetProxy = AA453BE01E6F49D0002A599C /* PBXContainerItemProxy */;
+			target = AA453C251E74E147002A599C /* Reggie */;
+			targetProxy = AA453C311E74E148002A599C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AA453BE71E6F49D0002A599C /* Debug */ = {
+		AA453C381E74E148002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		AA453BE81E6F49D0002A599C /* Release */ = {
+		AA453C391E74E148002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,9 +343,8 @@
 			};
 			name = Release;
 		};
-		AA453BEA1E6F49D0002A599C /* Debug */ = {
+		AA453C3B1E74E148002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -386,9 +365,8 @@
 			};
 			name = Debug;
 		};
-		AA453BEB1E6F49D0002A599C /* Release */ = {
+		AA453C3C1E74E148002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -408,9 +386,8 @@
 			};
 			name = Release;
 		};
-		AA453BED1E6F49D0002A599C /* Debug */ = {
+		AA453C3E1E74E148002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -422,9 +399,8 @@
 			};
 			name = Debug;
 		};
-		AA453BEE1E6F49D0002A599C /* Release */ = {
+		AA453C3F1E74E148002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -439,34 +415,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA453BCF1E6F49D0002A599C /* Build configuration list for PBXProject "Reggie" */ = {
+		AA453C201E74E147002A599C /* Build configuration list for PBXProject "Reggie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA453BE71E6F49D0002A599C /* Debug */,
-				AA453BE81E6F49D0002A599C /* Release */,
+				AA453C381E74E148002A599C /* Debug */,
+				AA453C391E74E148002A599C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA453BE91E6F49D0002A599C /* Build configuration list for PBXNativeTarget "Reggie" */ = {
+		AA453C3A1E74E148002A599C /* Build configuration list for PBXNativeTarget "Reggie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA453BEA1E6F49D0002A599C /* Debug */,
-				AA453BEB1E6F49D0002A599C /* Release */,
+				AA453C3B1E74E148002A599C /* Debug */,
+				AA453C3C1E74E148002A599C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA453BEC1E6F49D0002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */ = {
+		AA453C3D1E74E148002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA453BED1E6F49D0002A599C /* Debug */,
-				AA453BEE1E6F49D0002A599C /* Release */,
+				AA453C3E1E74E148002A599C /* Debug */,
+				AA453C3F1E74E148002A599C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AA453BCC1E6F49D0002A599C /* Project object */;
+	rootObject = AA453C1D1E74E147002A599C /* Project object */;
 }
