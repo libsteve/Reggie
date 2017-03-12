@@ -2,7 +2,7 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: beta-xcode8.3
+osx_image: beta-xcode8.4
 language: objective-c
 
 xcode-project: Reggie.xcodeproj
