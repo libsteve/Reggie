@@ -1,12 +1,4 @@
-//
-//  Reggie.h
-//  Reggie
-//
-//  Created by Steve Brunwasser on 3/7/17.
-//  Copyright © 2017 Steve Brunwasser. All rights reserved.
-//
-
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Reggie.
 FOUNDATION_EXPORT double ReggieVersionNumber;

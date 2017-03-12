@@ -16,5 +16,5 @@ non-deterministic finite automata, push-down automata, and more.
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
 
-  s.source_files = 'Reggie/**/*.swift'
+  s.source_files = 'Source/**/*.swift'
 end

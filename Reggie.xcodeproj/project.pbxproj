@@ -7,56 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA453C301E74E148002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453C261E74E147002A599C /* Reggie.framework */; };
-		AA453C351E74E148002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C341E74E148002A599C /* ReggieTests.swift */; };
-		AA453C371E74E148002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453C291E74E147002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAC273351E74E422004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273301E74E422004740E7 /* Automata.swift */; };
-		AAC273361E74E422004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273311E74E422004740E7 /* NFA.swift */; };
-		AAC273371E74E422004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273321E74E422004740E7 /* Node.swift */; };
-		AAC273381E74E422004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273331E74E422004740E7 /* PDA.swift */; };
-		AAC273391E74E422004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273341E74E422004740E7 /* Transition.swift */; };
+		AAC273971E74FC96004740E7 /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2738E1E74FC96004740E7 /* Reggie.framework */; };
+		AAC273B31E74FCC3004740E7 /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC273AA1E74FCC3004740E7 /* Reggie.framework */; };
+		AAC273E41E74FE84004740E7 /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273D11E74FD9C004740E7 /* ReggieTests.swift */; };
+		AAC273E51E74FE8A004740E7 /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273D11E74FD9C004740E7 /* ReggieTests.swift */; };
+		AAC273EE1E74FFE0004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273E91E74FFDC004740E7 /* Automata.swift */; };
+		AAC273EF1E74FFE0004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EA1E74FFDC004740E7 /* NFA.swift */; };
+		AAC273F01E74FFE0004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EB1E74FFDC004740E7 /* Node.swift */; };
+		AAC273F11E74FFE0004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EC1E74FFDC004740E7 /* PDA.swift */; };
+		AAC273F21E74FFE0004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273ED1E74FFDC004740E7 /* Transition.swift */; };
+		AAC273F31E74FFE1004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273E91E74FFDC004740E7 /* Automata.swift */; };
+		AAC273F41E74FFE1004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EA1E74FFDC004740E7 /* NFA.swift */; };
+		AAC273F51E74FFE1004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EB1E74FFDC004740E7 /* Node.swift */; };
+		AAC273F61E74FFE1004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EC1E74FFDC004740E7 /* PDA.swift */; };
+		AAC273F71E74FFE1004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273ED1E74FFDC004740E7 /* Transition.swift */; };
+		AAC273FA1E750053004740E7 /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC273F91E75000D004740E7 /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC273FB1E75005B004740E7 /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC273F91E75000D004740E7 /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AA453C311E74E148002A599C /* PBXContainerItemProxy */ = {
+		AAC273981E74FC96004740E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA453C1D1E74E147002A599C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA453C251E74E147002A599C;
-			remoteInfo = Reggie;
+			remoteGlobalIDString = AAC2738D1E74FC96004740E7;
+			remoteInfo = "Reggie macOS";
+		};
+		AAC273B41E74FCC3004740E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA453C1D1E74E147002A599C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC273A91E74FCC3004740E7;
+			remoteInfo = "Reggie iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA453C261E74E147002A599C /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA453C291E74E147002A599C /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
-		AA453C2A1E74E147002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA453C2F1E74E148002A599C /* ReggieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReggieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA453C341E74E148002A599C /* ReggieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReggieTests.swift; sourceTree = "<group>"; };
-		AA453C361E74E148002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAC273301E74E422004740E7 /* Automata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
-		AAC273311E74E422004740E7 /* NFA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
-		AAC273321E74E422004740E7 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		AAC273331E74E422004740E7 /* PDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
-		AAC273341E74E422004740E7 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		AAC2733A1E74E433004740E7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AAC2733B1E74E433004740E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AAC2733C1E74E433004740E7 /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
+		AAC2738E1E74FC96004740E7 /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC273961E74FC96004740E7 /* Reggie macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reggie macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC273AA1E74FCC3004740E7 /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC273B21E74FCC3004740E7 /* Reggie iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reggie iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC273D01E74FD9C004740E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC273D11E74FD9C004740E7 /* ReggieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReggieTests.swift; sourceTree = "<group>"; };
+		AAC273E91E74FFDC004740E7 /* Automata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
+		AAC273EA1E74FFDC004740E7 /* NFA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
+		AAC273EB1E74FFDC004740E7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		AAC273EC1E74FFDC004740E7 /* PDA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
+		AAC273ED1E74FFDC004740E7 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		AAC273F81E75000D004740E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC273F91E75000D004740E7 /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA453C221E74E147002A599C /* Frameworks */ = {
+		AAC2738A1E74FC96004740E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA453C2C1E74E148002A599C /* Frameworks */ = {
+		AAC273931E74FC96004740E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453C301E74E148002A599C /* Reggie.framework in Frameworks */,
+				AAC273971E74FC96004740E7 /* Reggie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273A61E74FCC3004740E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273AF1E74FCC3004740E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC273B31E74FCC3004740E7 /* Reggie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,92 +101,155 @@
 				AAC2733A1E74E433004740E7 /* LICENSE */,
 				AAC2733B1E74E433004740E7 /* README.md */,
 				AAC2733C1E74E433004740E7 /* Reggie.podspec */,
-				AA453C281E74E147002A599C /* Reggie */,
-				AA453C331E74E148002A599C /* ReggieTests */,
-				AA453C271E74E147002A599C /* Products */,
+				AAC273E81E74FFDC004740E7 /* Source */,
+				AAC273CF1E74FD9C004740E7 /* Tests */,
+				AAC273C91E74FD9C004740E7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AA453C271E74E147002A599C /* Products */ = {
+		AAC273C91E74FD9C004740E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA453C261E74E147002A599C /* Reggie.framework */,
-				AA453C2F1E74E148002A599C /* ReggieTests.xctest */,
+				AAC273E61E74FEC6004740E7 /* iOS */,
+				AAC273E71E74FECD004740E7 /* macOS */,
 			);
 			name = Products;
+			path = iOS;
 			sourceTree = "<group>";
 		};
-		AA453C281E74E147002A599C /* Reggie */ = {
+		AAC273CF1E74FD9C004740E7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AA453C291E74E147002A599C /* Reggie.h */,
-				AA453C2A1E74E147002A599C /* Info.plist */,
-				AAC273301E74E422004740E7 /* Automata.swift */,
-				AAC273311E74E422004740E7 /* NFA.swift */,
-				AAC273321E74E422004740E7 /* Node.swift */,
-				AAC273331E74E422004740E7 /* PDA.swift */,
-				AAC273341E74E422004740E7 /* Transition.swift */,
+				AAC273D01E74FD9C004740E7 /* Info.plist */,
+				AAC273D11E74FD9C004740E7 /* ReggieTests.swift */,
 			);
-			path = Reggie;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		AA453C331E74E148002A599C /* ReggieTests */ = {
+		AAC273E61E74FEC6004740E7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AA453C341E74E148002A599C /* ReggieTests.swift */,
-				AA453C361E74E148002A599C /* Info.plist */,
+				AAC273AA1E74FCC3004740E7 /* Reggie.framework */,
+				AAC273B21E74FCC3004740E7 /* Reggie iOS Tests.xctest */,
 			);
-			path = ReggieTests;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AAC273E71E74FECD004740E7 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAC2738E1E74FC96004740E7 /* Reggie.framework */,
+				AAC273961E74FC96004740E7 /* Reggie macOS Tests.xctest */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		AAC273E81E74FFDC004740E7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AAC273F91E75000D004740E7 /* Reggie.h */,
+				AAC273F81E75000D004740E7 /* Info.plist */,
+				AAC273E91E74FFDC004740E7 /* Automata.swift */,
+				AAC273EA1E74FFDC004740E7 /* NFA.swift */,
+				AAC273EB1E74FFDC004740E7 /* Node.swift */,
+				AAC273EC1E74FFDC004740E7 /* PDA.swift */,
+				AAC273ED1E74FFDC004740E7 /* Transition.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AA453C231E74E147002A599C /* Headers */ = {
+		AAC2738B1E74FC96004740E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453C371E74E148002A599C /* Reggie.h in Headers */,
+				AAC273FA1E750053004740E7 /* Reggie.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273A71E74FCC3004740E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC273FB1E75005B004740E7 /* Reggie.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AA453C251E74E147002A599C /* Reggie */ = {
+		AAC2738D1E74FC96004740E7 /* Reggie macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA453C3A1E74E148002A599C /* Build configuration list for PBXNativeTarget "Reggie" */;
+			buildConfigurationList = AAC2739F1E74FC96004740E7 /* Build configuration list for PBXNativeTarget "Reggie macOS" */;
 			buildPhases = (
-				AA453C211E74E147002A599C /* Sources */,
-				AA453C221E74E147002A599C /* Frameworks */,
-				AA453C231E74E147002A599C /* Headers */,
-				AA453C241E74E147002A599C /* Resources */,
+				AAC273891E74FC96004740E7 /* Sources */,
+				AAC2738A1E74FC96004740E7 /* Frameworks */,
+				AAC2738B1E74FC96004740E7 /* Headers */,
+				AAC2738C1E74FC96004740E7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Reggie;
-			productName = Reggie;
-			productReference = AA453C261E74E147002A599C /* Reggie.framework */;
+			name = "Reggie macOS";
+			productName = "Reggie macOS";
+			productReference = AAC2738E1E74FC96004740E7 /* Reggie.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AA453C2E1E74E148002A599C /* ReggieTests */ = {
+		AAC273951E74FC96004740E7 /* Reggie macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA453C3D1E74E148002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */;
+			buildConfigurationList = AAC273A21E74FC96004740E7 /* Build configuration list for PBXNativeTarget "Reggie macOS Tests" */;
 			buildPhases = (
-				AA453C2B1E74E148002A599C /* Sources */,
-				AA453C2C1E74E148002A599C /* Frameworks */,
-				AA453C2D1E74E148002A599C /* Resources */,
+				AAC273921E74FC96004740E7 /* Sources */,
+				AAC273931E74FC96004740E7 /* Frameworks */,
+				AAC273941E74FC96004740E7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA453C321E74E148002A599C /* PBXTargetDependency */,
+				AAC273991E74FC96004740E7 /* PBXTargetDependency */,
 			);
-			name = ReggieTests;
-			productName = ReggieTests;
-			productReference = AA453C2F1E74E148002A599C /* ReggieTests.xctest */;
+			name = "Reggie macOS Tests";
+			productName = "Reggie macOSTests";
+			productReference = AAC273961E74FC96004740E7 /* Reggie macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAC273A91E74FCC3004740E7 /* Reggie iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC273BB1E74FCC3004740E7 /* Build configuration list for PBXNativeTarget "Reggie iOS" */;
+			buildPhases = (
+				AAC273A51E74FCC3004740E7 /* Sources */,
+				AAC273A61E74FCC3004740E7 /* Frameworks */,
+				AAC273A71E74FCC3004740E7 /* Headers */,
+				AAC273A81E74FCC3004740E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reggie iOS";
+			productName = "Reggie iOS";
+			productReference = AAC273AA1E74FCC3004740E7 /* Reggie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAC273B11E74FCC3004740E7 /* Reggie iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC273BE1E74FCC3004740E7 /* Build configuration list for PBXNativeTarget "Reggie iOS Tests" */;
+			buildPhases = (
+				AAC273AE1E74FCC3004740E7 /* Sources */,
+				AAC273AF1E74FCC3004740E7 /* Frameworks */,
+				AAC273B01E74FCC3004740E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC273B51E74FCC3004740E7 /* PBXTargetDependency */,
+			);
+			name = "Reggie iOS Tests";
+			productName = "Reggie iOSTests";
+			productReference = AAC273B21E74FCC3004740E7 /* Reggie iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -167,12 +262,19 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Steve Brunwasser";
 				TargetAttributes = {
-					AA453C251E74E147002A599C = {
+					AAC2738D1E74FC96004740E7 = {
 						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					AA453C2E1E74E148002A599C = {
+					AAC273951E74FC96004740E7 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					AAC273A91E74FCC3004740E7 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					AAC273B11E74FCC3004740E7 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -186,25 +288,41 @@
 				en,
 			);
 			mainGroup = AA453C1C1E74E147002A599C;
-			productRefGroup = AA453C271E74E147002A599C /* Products */;
+			productRefGroup = AA453C1C1E74E147002A599C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA453C251E74E147002A599C /* Reggie */,
-				AA453C2E1E74E148002A599C /* ReggieTests */,
+				AAC2738D1E74FC96004740E7 /* Reggie macOS */,
+				AAC273951E74FC96004740E7 /* Reggie macOS Tests */,
+				AAC273A91E74FCC3004740E7 /* Reggie iOS */,
+				AAC273B11E74FCC3004740E7 /* Reggie iOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA453C241E74E147002A599C /* Resources */ = {
+		AAC2738C1E74FC96004740E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA453C2D1E74E148002A599C /* Resources */ = {
+		AAC273941E74FC96004740E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273A81E74FCC3004740E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273B01E74FCC3004740E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,33 +332,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA453C211E74E147002A599C /* Sources */ = {
+		AAC273891E74FC96004740E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAC273391E74E422004740E7 /* Transition.swift in Sources */,
-				AAC273371E74E422004740E7 /* Node.swift in Sources */,
-				AAC273381E74E422004740E7 /* PDA.swift in Sources */,
-				AAC273351E74E422004740E7 /* Automata.swift in Sources */,
-				AAC273361E74E422004740E7 /* NFA.swift in Sources */,
+				AAC273F71E74FFE1004740E7 /* Transition.swift in Sources */,
+				AAC273F41E74FFE1004740E7 /* NFA.swift in Sources */,
+				AAC273F61E74FFE1004740E7 /* PDA.swift in Sources */,
+				AAC273F31E74FFE1004740E7 /* Automata.swift in Sources */,
+				AAC273F51E74FFE1004740E7 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA453C2B1E74E148002A599C /* Sources */ = {
+		AAC273921E74FC96004740E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA453C351E74E148002A599C /* ReggieTests.swift in Sources */,
+				AAC273E41E74FE84004740E7 /* ReggieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273A51E74FCC3004740E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC273F21E74FFE0004740E7 /* Transition.swift in Sources */,
+				AAC273EF1E74FFE0004740E7 /* NFA.swift in Sources */,
+				AAC273F11E74FFE0004740E7 /* PDA.swift in Sources */,
+				AAC273EE1E74FFE0004740E7 /* Automata.swift in Sources */,
+				AAC273F01E74FFE0004740E7 /* Node.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC273AE1E74FCC3004740E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC273E51E74FE8A004740E7 /* ReggieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AA453C321E74E148002A599C /* PBXTargetDependency */ = {
+		AAC273991E74FC96004740E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA453C251E74E147002A599C /* Reggie */;
-			targetProxy = AA453C311E74E148002A599C /* PBXContainerItemProxy */;
+			target = AAC2738D1E74FC96004740E7 /* Reggie macOS */;
+			targetProxy = AAC273981E74FC96004740E7 /* PBXContainerItemProxy */;
+		};
+		AAC273B51E74FCC3004740E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC273A91E74FCC3004740E7 /* Reggie iOS */;
+			targetProxy = AAC273B41E74FCC3004740E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,10 +486,9 @@
 			};
 			name = Release;
 		};
-		AA453C3B1E74E148002A599C /* Debug */ = {
+		AAC273A01E74FC96004740E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -354,21 +496,19 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Reggie/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = brun.steve.Reggie;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-macOS";
+				PRODUCT_NAME = Reggie;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		AA453C3C1E74E148002A599C /* Release */ = {
+		AAC273A11E74FC96004740E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -376,39 +516,115 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Reggie/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = brun.steve.Reggie;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-macOS";
+				PRODUCT_NAME = Reggie;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		AA453C3E1E74E148002A599C /* Debug */ = {
+		AAC273A31E74FC96004740E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ReggieTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = brun.steve.ReggieTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		AA453C3F1E74E148002A599C /* Release */ = {
+		AAC273A41E74FC96004740E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ReggieTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = brun.steve.ReggieTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AAC273BC1E74FCC3004740E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-iOS";
+				PRODUCT_NAME = Reggie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAC273BD1E74FCC3004740E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-iOS";
+				PRODUCT_NAME = Reggie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC273BF1E74FCC3004740E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AAC273C01E74FCC3004740E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "brun.steve.Reggie-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -424,20 +640,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA453C3A1E74E148002A599C /* Build configuration list for PBXNativeTarget "Reggie" */ = {
+		AAC2739F1E74FC96004740E7 /* Build configuration list for PBXNativeTarget "Reggie macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA453C3B1E74E148002A599C /* Debug */,
-				AA453C3C1E74E148002A599C /* Release */,
+				AAC273A01E74FC96004740E7 /* Debug */,
+				AAC273A11E74FC96004740E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA453C3D1E74E148002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */ = {
+		AAC273A21E74FC96004740E7 /* Build configuration list for PBXNativeTarget "Reggie macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA453C3E1E74E148002A599C /* Debug */,
-				AA453C3F1E74E148002A599C /* Release */,
+				AAC273A31E74FC96004740E7 /* Debug */,
+				AAC273A41E74FC96004740E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC273BB1E74FCC3004740E7 /* Build configuration list for PBXNativeTarget "Reggie iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC273BC1E74FCC3004740E7 /* Debug */,
+				AAC273BD1E74FCC3004740E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC273BE1E74FCC3004740E7 /* Build configuration list for PBXNativeTarget "Reggie iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC273BF1E74FCC3004740E7 /* Debug */,
+				AAC273C01E74FCC3004740E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
