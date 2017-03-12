@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A462ADD587C72C883711AD3 /* Pods_Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */; };
 		AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA453BD51E6F49D0002A599C /* Reggie.framework */; };
 		AA453BE41E6F49D0002A599C /* ReggieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453BE31E6F49D0002A599C /* ReggieTests.swift */; };
 		AA453BE61E6F49D0002A599C /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AA453BD81E6F49D0002A599C /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,6 +16,7 @@
 		AA453C101E736F90002A599C /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C0F1E736F90002A599C /* PDA.swift */; };
 		AA453C121E736FAC002A599C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C111E736FAC002A599C /* Transition.swift */; };
 		AA453C141E736FCA002A599C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA453C131E736FCA002A599C /* Node.swift */; };
+		ED7EAE371A3BC4D6F9655727 /* Pods_ReggieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reggie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reggie/Pods-Reggie.debug.xcconfig"; sourceTree = "<group>"; };
+		8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReggieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reggie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reggie/Pods-Reggie.release.xcconfig"; sourceTree = "<group>"; };
+		930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReggieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA453BD51E6F49D0002A599C /* Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA453BD81E6F49D0002A599C /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
 		AA453BD91E6F49D0002A599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +45,12 @@
 		AA453C0F1E736F90002A599C /* PDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
 		AA453C111E736FAC002A599C /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		AA453C131E736FCA002A599C /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		AA453C171E74CB9F002A599C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA453C181E74CB9F002A599C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		AA453C191E74CB9F002A599C /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
+		AA453C1A1E74CBE4002A599C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReggieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reggie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A462ADD587C72C883711AD3 /* Pods_Reggie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +67,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA453BDF1E6F49D0002A599C /* Reggie.framework in Frameworks */,
+				ED7EAE371A3BC4D6F9655727 /* Pods_ReggieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397552DF888A160A21B6E68A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB33B323A4DA2F1B3C69E378 /* Pods_Reggie.framework */,
+				B4FD65FEE7E5F4E8F440E577 /* Pods_ReggieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BE3B1D9E0718B34A7097B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */,
+				8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */,
+				930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */,
+				8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AA453BCB1E6F49D0002A599C = {
 			isa = PBXGroup;
 			children = (
+				AA453C171E74CB9F002A599C /* LICENSE */,
+				AA453C181E74CB9F002A599C /* Podfile */,
+				AA453C1A1E74CBE4002A599C /* README.md */,
+				AA453C191E74CB9F002A599C /* Reggie.podspec */,
 				AA453BD71E6F49D0002A599C /* Reggie */,
 				AA453BE21E6F49D0002A599C /* ReggieTests */,
 				AA453BD61E6F49D0002A599C /* Products */,
+				4BE3B1D9E0718B34A7097B4E /* Pods */,
+				397552DF888A160A21B6E68A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,10 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA453BE91E6F49D0002A599C /* Build configuration list for PBXNativeTarget "Reggie" */;
 			buildPhases = (
+				6B01B27C2CF908AEAFD53863 /* [CP] Check Pods Manifest.lock */,
 				AA453BD01E6F49D0002A599C /* Sources */,
 				AA453BD11E6F49D0002A599C /* Frameworks */,
 				AA453BD21E6F49D0002A599C /* Headers */,
 				AA453BD31E6F49D0002A599C /* Resources */,
+				E3E5FE86E4EC5AB7DA96949D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA453BEC1E6F49D0002A599C /* Build configuration list for PBXNativeTarget "ReggieTests" */;
 			buildPhases = (
+				0F43712C322832C0287B4775 /* [CP] Check Pods Manifest.lock */,
 				AA453BDA1E6F49D0002A599C /* Sources */,
 				AA453BDB1E6F49D0002A599C /* Frameworks */,
 				AA453BDC1E6F49D0002A599C /* Resources */,
+				23295CEB2EB5F7109A22E657 /* [CP] Embed Pods Frameworks */,
+				D2241ED02347E5FD2DD180D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +251,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F43712C322832C0287B4775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23295CEB2EB5F7109A22E657 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B01B27C2CF908AEAFD53863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2241ED02347E5FD2DD180D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReggieTests/Pods-ReggieTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E5FE86E4EC5AB7DA96949D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reggie/Pods-Reggie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA453BD01E6F49D0002A599C /* Sources */ = {
@@ -339,6 +462,7 @@
 		};
 		AA453BEA1E6F49D0002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2F8C9109BD310EB2AD3C01 /* Pods-Reggie.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -361,6 +485,7 @@
 		};
 		AA453BEB1E6F49D0002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA4DE713392328DC38FFD31 /* Pods-Reggie.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -382,8 +507,9 @@
 		};
 		AA453BED1E6F49D0002A599C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930E9881AE85038352B57B3A /* Pods-ReggieTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -395,8 +521,9 @@
 		};
 		AA453BEE1E6F49D0002A599C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8139F7B78755031CE090B10B /* Pods-ReggieTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReggieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
