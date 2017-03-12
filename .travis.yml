@@ -14,7 +14,6 @@ script:
       -project Reggie.xcodeproj
       -scheme 'Reggie iOS Tests'
       -sdk iphonesimulator10.2
-      -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 5'
   | xcpretty
 - set -o pipefail
   && xcodebuild
@@ -22,6 +21,5 @@ script:
       -project Reggie.xcodeproj
       -scheme 'Reggie macOS Tests'
       -sdk macosx10.12
-      -destination 'platform=OS X'
   | xcpretty
 - pod lib lint
