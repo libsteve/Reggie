@@ -11,23 +11,20 @@ class ReggieTests: XCTestCase {
   }
 
   func testAutomata() {
-    let a = NFA<String>()
+    var a = NFA<String>()
     let b = NFA<String>(terminal: true)
-    let t1 = Transition(to: b) { $0 == "b" }
-    a.transitions.append(t1)
+    a.transition(to: b) { $0 == "b" }
     let m = Automata(root: a)
-    XCTAssertTrue(m.advance(with: "b").successful, "The automata should contain 'b'.")
-    XCTAssertFalse(m.advance(with: "a").successful, "The automata should not contain 'a'.")
+    XCTAssertTrue(m.advance(with: "b")!.isPassing, "The automata should contain 'b'.")
+    XCTAssertNil(m.advance(with: "a"), "The automata should not contain 'a'.")
   }
 
   func testComplexAutomata() {
-    let a = NFA<String>()
-    let b = NFA<String>()
+    var a = NFA<String>()
+    var b = NFA<String>()
     let c = NFA<String>(terminal: true)
-    let t1 = Transition(to: b) { $0 == "a" }
-    let t2 = Transition(to: c) { $0 == "b" }
-    a.transitions.append(t1)
-    b.transitions.append(t2)
+    a.transition(to: b) { $0 == "a" }
+    b.transition(to: c) { $0 == "b" }
     let m = Automata(root: a)
     XCTAssertTrue(m.contains(input: ["a", "b"]), "The automata should contain 'ab'.")
     XCTAssertFalse(m.contains(input: ["a"]), "The automata should not contain 'a'.")
@@ -35,15 +32,12 @@ class ReggieTests: XCTestCase {
   }
 
   func testLoopingAutomata() {
-    let a = NFA<String>()
-    let b = NFA<String>()
+    var a = NFA<String>()
+    var b = NFA<String>()
     let c = NFA<String>(terminal: true)
-    let t1 = Transition(to: b) { $0 == "a" }
-    let t2 = Transition(to: c) { $0 == "b" }
-    let t3 = Transition(to: b) { $0 == "a" }
-    a.transitions.append(t1)
-    b.transitions.append(t2)
-    b.transitions.append(t3)
+    a.transition(to: b) { $0 == "a" }
+    b.transition(to: c) { $0 == "b" }
+    b.transition(to: b) { $0 == "a" }
     let m = Automata(root: a)
     XCTAssertTrue(m.contains(input: ["a", "b"]), "The automata should contain 'ab'.")
     XCTAssertTrue(m.contains(input: ["a", "a", "b"]), "The automata should contain 'aab'.")
@@ -51,6 +45,22 @@ class ReggieTests: XCTestCase {
     XCTAssertFalse(m.contains(input: ["a"]), "The automata should not contain 'a'.")
     XCTAssertFalse(m.contains(input: ["b"]), "The automata should not contain 'b'.")
     XCTAssertFalse(m.contains(input: ["abb"]), "The automata should not contain 'abb'.")
+  }
+
+  func testOnePathFails() {
+    var a = NFA<String>()
+    var b = NFA<String>()
+    var c = NFA<String>()
+    let d = NFA<String>()
+    let e = NFA<String>(terminal: true)
+    let m = Automata(root: a)
+    a.transition(to: b) { $0 == "a" }
+    b.transition(to: c) { $0 == "b" }
+    b.transition(to: d) { $0 == "b" }
+    c.transition(to: e) { $0 == "c" }
+    XCTAssertTrue(m.contains(input: ["a", "b", "c"]), "The automata should contain 'abd'.")
+    XCTAssertFalse(m.contains(input: ["a", "b"]), "The automata should not contain 'ab'.")
+    XCTAssertFalse(m.contains(input: ["a", "b", "d"]), "The automata should not contain 'abc'.")
   }
   
 }

@@ -13,9 +13,8 @@ public struct Automata<Node: Reggie.Node> {
 
   /// Indicate whether or not the automata is in a successfully terminating position.
   /// - returns: `true` when any of the nodes within this automata's current states are terminal.
-  public var successful: Bool {
-    guard states.isEmpty == false else { return false }
-    return states.reduce(true) { $0 && $1.0.terminal }
+  public var isPassing: Bool {
+    return states.reduce(false) { $0 || $1.0.terminal }
   }
 
   /// Create a new automata using the specified initial root node and metadata.
@@ -25,18 +24,25 @@ public struct Automata<Node: Reggie.Node> {
     states = [(node, meta)]
   }
 
+  /// Create a new automata using the specified current states.
+  /// - parameter states: A pairing of nodes with their corresponding metadata.
+  init?(states: [(Node, Meta)]) {
+    guard states.isEmpty == false else { return nil }
+    self.states = states
+  }
+
   /// Evaluate the automata with the given input.
   /// - parameter input: A unit of input data which can allow the automata's
   ///                    internal state machine to advance by one transition.
-  /// - returns: An automata with an internal state machine that has advanced
-  ///            according to the given input.
-  public func advance(with input: Input) -> Automata {
-    var automata = self
-    automata.states = states.flatMap { state -> [(Node, Meta)] in
+  /// - returns: An automata with an internal state machine that has advanced according
+  ///            to the given input. Otherwise, if the input does not result in the
+  ///            successful transition from one node to another, `nil` is returned.
+  public func advance(with input: Input) -> Automata? {
+    let nextStates = states.flatMap { state -> [(Node, Meta)] in
       let (node, meta) = state
       return node.transitions.flatMap { $0.traverse(with:input, meta) }
     }
-    return automata
+    return Automata(states: nextStates)
   }
 
   /// Determine whether the language described by this automata contains the given input.
@@ -47,9 +53,9 @@ public struct Automata<Node: Reggie.Node> {
   ///            by the automata.
   public func contains<S: Sequence>(input: S) -> Bool where S.Iterator.Element == Input {
     let result = input.reduce(self) { automata, element in
-      return automata.advance(with: element)
+      return automata?.advance(with: element)
     }
-    return result.successful
+    return result.map { $0.isPassing } ?? false
   }
 }
 
