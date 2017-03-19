@@ -29,7 +29,7 @@ public struct Transition<Node: Reggie.Node> {
   ///                   determine how the automata should progress.
   /// - returns: `nil` if the input doesn't match this transition's predicate.
   ///            If the input passes the predicate, a pairing of the next node for the automata,
-  ///            as well as the resulting metadata for following this transition.
+  ///            as well as the resulting metadata after following this transition.
   public func traverse(with input: Input, _ meta: Meta) -> (Node, Meta)? {
     let (success, meta) = predicate(input, meta)
     guard success else { return nil }
@@ -38,10 +38,19 @@ public struct Transition<Node: Reggie.Node> {
 }
 
 extension Transition where Node.Meta == () {
+  /// Create a new transition.
+  /// - parameter node: The node to which the automata may be transitioned.
+  /// - parameter condition: A function over a unit of input to determine whether or not
+  ///                        the automata should follow this transition.
   public init(to node: Node, when condition: @escaping (Input) -> Bool) {
     self.init(to: node) { input, _  in (condition(input), ()) }
   }
 
+  /// Determine whether or not the automata's state machine should progress to the next node.
+  /// - parameter input: A unit of input that may match this transition's the predicate.
+  /// - returns: `nil` if the input doesn't match this transition's predicate.
+  ///            If the input passes the predicate, the next node for the automata after
+  ///            following this transition.
   public func traverse(with input: Input) -> Node? {
     return self.traverse(with: input, ()).map { $0.0 }
   }

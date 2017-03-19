@@ -1,7 +1,7 @@
 import XCTest
 @testable import Reggie
 
-class ReggieTests: XCTestCase {
+class AutomataTests: XCTestCase {
 
   func testTransition() {
     let a = NFA<String>()
