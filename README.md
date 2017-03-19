@@ -1,9 +1,11 @@
 # Reggie
 
+<!--
 [![CI Status](http://img.shields.io/travis/altece/Reggie.svg?style=flat)](https://travis-ci.org/altece/Reggie)
 [![Version](https://img.shields.io/cocoapods/v/Reggie.svg?style=flat)](http://cocoapods.org/pods/Reggie)
 [![License](https://img.shields.io/cocoapods/l/Reggie.svg?style=flat)](http://cocoapods.org/pods/Reggie)
 [![Platform](https://img.shields.io/cocoapods/p/Reggie.svg?style=flat)](http://cocoapods.org/pods/Reggie)
+ -->
 
 Reggie is a framework for creating a [Finite State Machine][1] as described in [Automata Theory][2],
 such as a [Non-Deterministic Finite Automatan][3] and [Push-Down Automatan][4].
@@ -15,11 +17,11 @@ such as a [Non-Deterministic Finite Automatan][3] and [Push-Down Automatan][4].
 
 ## Installation
 
-Reggie is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Reggie is available through [CocoaPods](http://cocoapods.org). 
+To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "Reggie"
+pod 'Reggie', :git => 'https://github.com/Altece/Reggie.git'
 ```
 
 ## Author

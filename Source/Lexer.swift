@@ -1,24 +1,24 @@
 import Foundation
 
-/// A special type of iterator which can emit values which belong in a given automata's language.
-public struct MatchGenerator<Input> {
+/// A generator which emits values that belong to a given automata's language.
+public struct Lexer<Input> {
   /// - note: This is `internal` for testing only.
   internal var iterator: AnyIterator<Input>
 
-  /// Create a new match generator which reads from the given iterator.
+  /// Create a new lexer which reads from the given iterator.
   public init<Iterator: IteratorProtocol>(reading iterator: Iterator)
     where Input == Iterator.Element {
       self.iterator = AnyIterator(iterator)
   }
 
-  /// Create a new match generator which reads from the given sequence.
+  /// Create a new lexer which reads from the given sequence.
   public init<S: Sequence>(reading sequence: S)
     where Input == S.Iterator.Element {
       self.iterator = AnyIterator(sequence.makeIterator())
   }
 
   /// Generate the next match for the given automata.
-  /// - parameter automata: The automata against which this matcher's input should match.
+  /// - parameter automata: The automata against which this lexer's input should match.
   /// - returns: `nil` if no match is found. Otherwise, the matching subsequence is returned.
   /// - note: If a match isn't found for an automata, it might match another. The internal iterator
   ///         will only advance when a match is found.

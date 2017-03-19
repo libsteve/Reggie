@@ -9,10 +9,10 @@ let aRepeatingPattern: Automata<NFA<Character>> = {
   return Automata(root: a)
 }()
 
-class MatchGeneratorTests: XCTestCase {
+class LexerTests: XCTestCase {
 
   func testSimpleNoMatch() {
-    var generator = MatchGenerator(reading: "b".characters)
+    var generator = Lexer(reading: "b".characters)
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertNil(token)
     XCTAssertEqual(generator.iterator.next(), "b")
@@ -20,7 +20,7 @@ class MatchGeneratorTests: XCTestCase {
   }
 
   func testSimpleMatch() {
-    var generator = MatchGenerator(reading: "aaa".characters)
+    var generator = Lexer(reading: "aaa".characters)
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertNotNil(token)
     XCTAssertEqual(String(token!), "aaa")
@@ -28,7 +28,7 @@ class MatchGeneratorTests: XCTestCase {
   }
 
   func testSimplePartialMatch() {
-    var generator = MatchGenerator(reading: "aaab".characters)
+    var generator = Lexer(reading: "aaab".characters)
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertEqual(String(token!), "aaa")
     XCTAssertEqual(generator.iterator.next(), "b")
@@ -46,7 +46,7 @@ class MatchGeneratorTests: XCTestCase {
       return Automata(root: a)
     }()
 
-    var generator = MatchGenerator(reading: "abbb".characters)
+    var generator = Lexer(reading: "abbb".characters)
     let token = generator.next(matching: automata)
     XCTAssertNotNil(token)
     XCTAssertEqual(String(token!), "a")

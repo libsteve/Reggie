@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA55F93F1E79F5C600835E25 /* MatchGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F93E1E79F5C600835E25 /* MatchGenerator.swift */; };
-		AA55F9401E79F5C600835E25 /* MatchGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F93E1E79F5C600835E25 /* MatchGenerator.swift */; };
+		AA55F93F1E79F5C600835E25 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F93E1E79F5C600835E25 /* Lexer.swift */; };
+		AA55F9401E79F5C600835E25 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F93E1E79F5C600835E25 /* Lexer.swift */; };
 		AA55F9421E79F6BB00835E25 /* PrefixedIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9411E79F6BB00835E25 /* PrefixedIterator.swift */; };
 		AA55F9431E79F6BB00835E25 /* PrefixedIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9411E79F6BB00835E25 /* PrefixedIterator.swift */; };
-		AA55F9471E79FF4D00835E25 /* MatchGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9441E79FF4B00835E25 /* MatchGeneratorTests.swift */; };
-		AA55F9481E79FF4E00835E25 /* MatchGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9441E79FF4B00835E25 /* MatchGeneratorTests.swift */; };
+		AA55F9471E79FF4D00835E25 /* LexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9441E79FF4B00835E25 /* LexerTests.swift */; };
+		AA55F9481E79FF4E00835E25 /* LexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9441E79FF4B00835E25 /* LexerTests.swift */; };
 		AA55F94C1E79FF7D00835E25 /* PrefixedIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9491E79FF7B00835E25 /* PrefixedIteratorTests.swift */; };
 		AA55F94D1E79FF7E00835E25 /* PrefixedIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55F9491E79FF7B00835E25 /* PrefixedIteratorTests.swift */; };
 		AAC273971E74FC96004740E7 /* Reggie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2738E1E74FC96004740E7 /* Reggie.framework */; };
@@ -51,9 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA55F93E1E79F5C600835E25 /* MatchGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchGenerator.swift; sourceTree = "<group>"; };
+		AA55F93E1E79F5C600835E25 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
 		AA55F9411E79F6BB00835E25 /* PrefixedIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixedIterator.swift; sourceTree = "<group>"; };
-		AA55F9441E79FF4B00835E25 /* MatchGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchGeneratorTests.swift; sourceTree = "<group>"; };
+		AA55F9441E79FF4B00835E25 /* LexerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexerTests.swift; sourceTree = "<group>"; };
 		AA55F9491E79FF7B00835E25 /* PrefixedIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixedIteratorTests.swift; sourceTree = "<group>"; };
 		AAC2733A1E74E433004740E7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AAC2733B1E74E433004740E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			children = (
 				AAC273D01E74FD9C004740E7 /* Info.plist */,
 				AAC273D11E74FD9C004740E7 /* AutomataTests.swift */,
-				AA55F9441E79FF4B00835E25 /* MatchGeneratorTests.swift */,
+				AA55F9441E79FF4B00835E25 /* LexerTests.swift */,
 				AA55F9491E79FF7B00835E25 /* PrefixedIteratorTests.swift */,
 			);
 			path = Tests;
@@ -164,7 +164,7 @@
 				AAC273F91E75000D004740E7 /* Reggie.h */,
 				AAC273F81E75000D004740E7 /* Info.plist */,
 				AAC273E91E74FFDC004740E7 /* Automata.swift */,
-				AA55F93E1E79F5C600835E25 /* MatchGenerator.swift */,
+				AA55F93E1E79F5C600835E25 /* Lexer.swift */,
 				AAC273EA1E74FFDC004740E7 /* NFA.swift */,
 				AAC273EB1E74FFDC004740E7 /* Node.swift */,
 				AAC273EC1E74FFDC004740E7 /* PDA.swift */,
@@ -353,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC273F71E74FFE1004740E7 /* Transition.swift in Sources */,
-				AA55F93F1E79F5C600835E25 /* MatchGenerator.swift in Sources */,
+				AA55F93F1E79F5C600835E25 /* Lexer.swift in Sources */,
 				AAC273F41E74FFE1004740E7 /* NFA.swift in Sources */,
 				AAC273F61E74FFE1004740E7 /* PDA.swift in Sources */,
 				AAC273F31E74FFE1004740E7 /* Automata.swift in Sources */,
@@ -367,7 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC273E41E74FE84004740E7 /* AutomataTests.swift in Sources */,
-				AA55F9481E79FF4E00835E25 /* MatchGeneratorTests.swift in Sources */,
+				AA55F9481E79FF4E00835E25 /* LexerTests.swift in Sources */,
 				AA55F94D1E79FF7E00835E25 /* PrefixedIteratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC273F21E74FFE0004740E7 /* Transition.swift in Sources */,
-				AA55F9401E79F5C600835E25 /* MatchGenerator.swift in Sources */,
+				AA55F9401E79F5C600835E25 /* Lexer.swift in Sources */,
 				AAC273EF1E74FFE0004740E7 /* NFA.swift in Sources */,
 				AAC273F11E74FFE0004740E7 /* PDA.swift in Sources */,
 				AAC273EE1E74FFE0004740E7 /* Automata.swift in Sources */,
@@ -391,7 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC273E51E74FE8A004740E7 /* AutomataTests.swift in Sources */,
-				AA55F9471E79FF4D00835E25 /* MatchGeneratorTests.swift in Sources */,
+				AA55F9471E79FF4D00835E25 /* LexerTests.swift in Sources */,
 				AA55F94C1E79FF7D00835E25 /* PrefixedIteratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
