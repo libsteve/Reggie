@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AAC273951E74FC96004740E7"
+               BuildableName = "Reggie macOS Tests.xctest"
+               BlueprintName = "Reggie macOS Tests"
+               ReferencedContainer = "container:Reggie.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AAC2738D1E74FC96004740E7"
+            BuildableName = "Reggie.framework"
+            BlueprintName = "Reggie macOS"
+            ReferencedContainer = "container:Reggie.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

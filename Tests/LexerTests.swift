@@ -1,12 +1,26 @@
 import XCTest
 @testable import Reggie
 
-let aRepeatingPattern: Automata<NFA<Character>> = {
-  var a = NFA<Character>()
-  var b = NFA<Character>(terminal: true)
-  a.transition(to: b) { $0 == Character("a") }
-  b.transition(to: b) { $0 == Character("a") }
-  return Automata(root: a)
+let aRepeatingPattern: NFA<Character> = {
+  var m = NFA<Character>()
+  let a = m.root,
+      b = State()
+  m.mark(b, as: .terminating)
+  m.transition(from: a, to: b) { $0 == Character("a") }
+  m.transition(from: b, to: b) { $0 == Character("a") }
+  return m
+}()
+
+let anotherRepeatingPattern: NFA<Character> = {
+  var m = NFA<Character>()
+  let a = m.root,
+  b = State(),
+  c = State()
+  m.mark(b, as: .terminating)
+  m.transition(from: a, to: b) { $0 == "a" }
+  m.transition(from: b, to: c) { $0 == "b" }
+  m.transition(from: c, to: c) { $0 == "b" }
+  return m
 }()
 
 class LexerTests: XCTestCase {
@@ -36,18 +50,8 @@ class LexerTests: XCTestCase {
   }
 
   func testSmallerSimplePartialMatch() {
-    let automata = { () -> Automata<NFA<Character>> in
-      var a = NFA<Character>()
-      var b = NFA<Character>(terminal: true)
-      var c = NFA<Character>()
-      a.transition(to: b) { $0 == "a" }
-      b.transition(to: c) { $0 == "b" }
-      c.transition(to: c) { $0 == "b" }
-      return Automata(root: a)
-    }()
-
     var generator = Lexer(reading: "abbb".characters)
-    let token = generator.next(matching: automata)
+    let token = generator.next(matching: anotherRepeatingPattern)
     XCTAssertNotNil(token)
     XCTAssertEqual(String(token!), "a")
     XCTAssertEqual(generator.iterator.next(), "b")

@@ -22,11 +22,10 @@ public struct Lexer<Input> {
   /// - returns: `nil` if no match is found. Otherwise, the matching subsequence is returned.
   /// - note: If a match isn't found for an automata, it might match another. The internal iterator
   ///         will only advance when a match is found.
-  public mutating func next<Node: Reggie.Node>(matching automata: Automata<Node>) -> [Input]?
-    where Input == Node.Input {
+  public mutating func next<Meta>(matching automata: Automata<Input, Meta>) -> [Input]? {
       var automata = automata,
-          consumed: [Node.Input] = [],
-          passingInput: [Node.Input]? = nil
+          consumed: [Input] = [],
+          passingInput: [Input]? = nil
 
       outerLoop: while let unit = iterator.next() {
         guard let advanced = automata.advance(with: unit) else {

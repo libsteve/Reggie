@@ -4,31 +4,112 @@ import Foundation
 ///
 /// This data structure can be used to represent a "language" of
 /// combinations of the given input type's instances.
-public struct Automata<Node: Reggie.Node> {
-  public typealias Input = Node.Input
-  public typealias Meta = Node.Meta
+public struct Automata<Input, Meta> {
+  typealias Transition = Reggie.Transition<Input, Meta>
 
-  /// A pairing of nodes with their corresponding metadata.
-  var states: [(Node, Meta)]
+  /// The state node from which the automata starts evaluating input.
+  public let root: State = State()
 
+  /// The initial value of the meta data when the automata starts evaluating input.
+  public let base: Meta
+
+  /// The set of all state nodes within the auotmata which are terminating,
+  /// meaning that they mark the end of a possible "word" within the automata's "language".
+  public fileprivate(set) var terminals: Set<State> = []
+
+  /// The set of all state nodes within the automata.
+  public var states: Set<State> { return Set(self.transitions.keys) }
+
+  /// A mapping of state nodes to 
+  var transitions: [State : [Transition]]
+
+  /// A pairing of currently visited state nodes with their corresponding metadata.
+  var current: [(State, Meta)]
+
+  /// Create a new automata using the specified initial root state and metadata.
+  /// - parameter meta: Any initial metadata value that should accompany evaluated state nodes.
+  public init(base meta: Meta) {
+    base = meta
+    current = [(root, base)]
+    transitions = [self.root : []]
+  }
+}
+
+extension Automata {
+  /// Connect two state nodes with a predicate transition.
+  /// - parameter source: The state node from where the transition should begin.
+  /// - parameter destination: The state node to where the successful transition should result.
+  /// - parameter transition: A predicate function which determines whether the given input and
+  ///                         metadata are sufficient to traverse the connection between states.
+  public mutating func transition(from source: State,
+                                  to destination: State,
+                                  over transition: @escaping (Input, Meta) -> (Bool, Meta)) {
+    if transitions[source] == nil { transitions[source] = [] }
+    if transitions[destination] == nil { transitions[destination] = [] }
+    transitions[source]?.append(Transition(to: destination, when: transition))
+  }
+
+  /// Determine whether or not a given state denotes
+  /// the possible end of a matching "word" within the automata's "language".
+  /// - parameter state: The state node whose termination status should be modified.
+  /// - parameter terminating: The value to which the state's termination status should be set.
+  public mutating func mark(_ state: State, as terminating: Termination) {
+    switch terminating {
+    case .terminating:
+      terminals.insert(state)
+      if transitions[state] == nil { transitions[state] = [] }
+    case .nonterminating:
+      terminals.remove(state)
+      if transitions[state]?.isEmpty ?? false { transitions[state] = nil }
+    }
+  }
+
+  /// Determine whether or not a given state denotes
+  /// the possible end of a matching "word" within the automata's "language".
+  /// - parameter state: The state node whose termination status should be modified.
+  /// - parameter terminal: A boolean value denoting whether or not the state node
+  ///                       represents the end of a possible match within the automata.
+  public mutating func set(_ state: State, terminal: Bool) {
+    mark(state, as: terminal ? .terminating : .nonterminating)
+  }
+}
+
+extension Automata where Meta == () {
+  /// Create a new automata using the specified initial root state node
+  /// which doesn't require metadata to operate.
+  public init() {
+    self.init(base: ())
+  }
+
+  /// Connect two state nodes with a predicate transition.
+  /// - parameter source: The state node from where the transition should begin.
+  /// - parameter destination: The state node to where the successful transition should result.
+  /// - parameter transition: A predicate function which determines whether the given input is
+  ///                         sufficient to traverse the connection between states.
+  public mutating func transition(from source: State,
+                                  to destination: State,
+                                  over transition: @escaping (Input) -> Bool) {
+    self.transition(from: source, to: destination) { (input: (Input, Meta)) in
+      let (input, _) = input
+      return (transition(input), ())
+    }
+  }
+}
+
+extension Automata {
   /// Indicate whether or not the automata is in a successfully terminating position.
-  /// - returns: `true` when any of the nodes within this automata's current states are terminal.
+  /// - returns: `true` when any of the states current within this automata are terminal.
   public var isPassing: Bool {
-    return states.reduce(false) { $0 || $1.0.terminal }
+    return current.reduce(false) { $0 || terminals.contains($1.0) }
   }
 
-  /// Create a new automata using the specified initial root node and metadata.
-  /// - parameter node: The initial node with which to start evaluating input.
-  /// - parameter meta: Any initial metadata value that should accompany evaluated nodes.
-  public init(root node: Node, _ meta: Meta) {
-    states = [(node, meta)]
-  }
-
-  /// Create a new automata using the specified current states.
-  /// - parameter states: A pairing of nodes with their corresponding metadata.
-  init?(states: [(Node, Meta)]) {
-    guard states.isEmpty == false else { return nil }
-    self.states = states
+  public var passingMeta: [Meta] {
+    return current.reduce([] as [Meta]) { collected, pair in
+      var collected = collected
+      let (state, meta) = pair
+      if terminals.contains(state) { collected.append(meta) }
+      return collected
+    }
   }
 
   /// Evaluate the automata with the given input.
@@ -36,13 +117,16 @@ public struct Automata<Node: Reggie.Node> {
   ///                    internal state machine to advance by one transition.
   /// - returns: An automata with an internal state machine that has advanced according
   ///            to the given input. Otherwise, if the input does not result in the
-  ///            successful transition from one node to another, `nil` is returned.
+  ///            successful transition from one state node to another, `nil` is returned.
   public func advance(with input: Input) -> Automata? {
-    let nextStates = states.flatMap { state -> [(Node, Meta)] in
-      let (node, meta) = state
-      return node.transitions.flatMap { $0.traverse(with:input, meta) }
+    let nextStates = current.flatMap { state -> [(State, Meta)] in
+      let (state, meta) = state
+      return transitions[state]?.flatMap { $0.traverse(with:input, meta) } ?? []
     }
-    return Automata(states: nextStates)
+    if nextStates.isEmpty { return nil }
+    var result = self
+    result.current = nextStates
+    return result
   }
 
   /// Determine whether the language described by this automata contains the given input.
@@ -56,14 +140,5 @@ public struct Automata<Node: Reggie.Node> {
       return automata?.advance(with: element)
     }
     return result.map { $0.isPassing } ?? false
-  }
-}
-
-extension Automata where Node.Meta == () {
-  /// Create a new automata using the specified initial root node
-  /// which doesn't require metadata to operate.
-  /// parameter node: The initial node with which to start evaluating input.
-  public init(root node: Node) {
-    self.init(root: node, ())
   }
 }
