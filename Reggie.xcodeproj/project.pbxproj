@@ -20,14 +20,10 @@
 		AAC273E41E74FE84004740E7 /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273D11E74FD9C004740E7 /* AutomataTests.swift */; };
 		AAC273E51E74FE8A004740E7 /* AutomataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273D11E74FD9C004740E7 /* AutomataTests.swift */; };
 		AAC273EE1E74FFE0004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273E91E74FFDC004740E7 /* Automata.swift */; };
-		AAC273EF1E74FFE0004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EA1E74FFDC004740E7 /* NFA.swift */; };
 		AAC273F01E74FFE0004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EB1E74FFDC004740E7 /* Node.swift */; };
-		AAC273F11E74FFE0004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EC1E74FFDC004740E7 /* PDA.swift */; };
 		AAC273F21E74FFE0004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273ED1E74FFDC004740E7 /* Transition.swift */; };
 		AAC273F31E74FFE1004740E7 /* Automata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273E91E74FFDC004740E7 /* Automata.swift */; };
-		AAC273F41E74FFE1004740E7 /* NFA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EA1E74FFDC004740E7 /* NFA.swift */; };
 		AAC273F51E74FFE1004740E7 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EB1E74FFDC004740E7 /* Node.swift */; };
-		AAC273F61E74FFE1004740E7 /* PDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273EC1E74FFDC004740E7 /* PDA.swift */; };
 		AAC273F71E74FFE1004740E7 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC273ED1E74FFDC004740E7 /* Transition.swift */; };
 		AAC273FA1E750053004740E7 /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC273F91E75000D004740E7 /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAC273FB1E75005B004740E7 /* Reggie.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC273F91E75000D004740E7 /* Reggie.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,9 +61,7 @@
 		AAC273D01E74FD9C004740E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC273D11E74FD9C004740E7 /* AutomataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomataTests.swift; sourceTree = "<group>"; };
 		AAC273E91E74FFDC004740E7 /* Automata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automata.swift; sourceTree = "<group>"; };
-		AAC273EA1E74FFDC004740E7 /* NFA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFA.swift; sourceTree = "<group>"; };
 		AAC273EB1E74FFDC004740E7 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		AAC273EC1E74FFDC004740E7 /* PDA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDA.swift; sourceTree = "<group>"; };
 		AAC273ED1E74FFDC004740E7 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		AAC273F81E75000D004740E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC273F91E75000D004740E7 /* Reggie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reggie.h; sourceTree = "<group>"; };
@@ -165,9 +159,7 @@
 				AAC273F81E75000D004740E7 /* Info.plist */,
 				AAC273E91E74FFDC004740E7 /* Automata.swift */,
 				AA55F93E1E79F5C600835E25 /* Lexer.swift */,
-				AAC273EA1E74FFDC004740E7 /* NFA.swift */,
 				AAC273EB1E74FFDC004740E7 /* Node.swift */,
-				AAC273EC1E74FFDC004740E7 /* PDA.swift */,
 				AA55F9411E79F6BB00835E25 /* PrefixedIterator.swift */,
 				AAC273ED1E74FFDC004740E7 /* Transition.swift */,
 			);
@@ -354,8 +346,6 @@
 			files = (
 				AAC273F71E74FFE1004740E7 /* Transition.swift in Sources */,
 				AA55F93F1E79F5C600835E25 /* Lexer.swift in Sources */,
-				AAC273F41E74FFE1004740E7 /* NFA.swift in Sources */,
-				AAC273F61E74FFE1004740E7 /* PDA.swift in Sources */,
 				AAC273F31E74FFE1004740E7 /* Automata.swift in Sources */,
 				AAC273F51E74FFE1004740E7 /* Node.swift in Sources */,
 				AA55F9421E79F6BB00835E25 /* PrefixedIterator.swift in Sources */,
@@ -378,8 +368,6 @@
 			files = (
 				AAC273F21E74FFE0004740E7 /* Transition.swift in Sources */,
 				AA55F9401E79F5C600835E25 /* Lexer.swift in Sources */,
-				AAC273EF1E74FFE0004740E7 /* NFA.swift in Sources */,
-				AAC273F11E74FFE0004740E7 /* PDA.swift in Sources */,
 				AAC273EE1E74FFE0004740E7 /* Automata.swift in Sources */,
 				AAC273F01E74FFE0004740E7 /* Node.swift in Sources */,
 				AA55F9431E79F6BB00835E25 /* PrefixedIterator.swift in Sources */,

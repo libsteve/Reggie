@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Reggie'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A state machine automata simulation framework.'
 
   s.description      = <<-DESC

@@ -142,3 +142,53 @@ extension Automata {
     return result.map { $0.isPassing } ?? false
   }
 }
+
+extension Automata {
+  /// Reset each state node within the automata to a new unique value
+  /// while presetving inter-node relationships.
+  public mutating func remap() {
+    let mapping: [State : State] = {
+      var mapping: [State : State] = [:]
+      let pairs = transitions.keys.map { ($0, State()) }
+      for (original, remapped) in pairs {
+        mapping[original] = remapped
+      }
+      return mapping
+    }()
+
+    transitions = {
+      var transitions: [State: [Transition]] = [:]
+      for state in self.transitions.keys {
+        transitions[mapping[state]!] = self.transitions[state]!.map { transition in
+          var transition = transition
+          transition.destination = mapping[transition.destination]!
+          return transition
+        }
+      }
+      return transitions
+    }()
+
+    terminals = {
+      var terminals: Set<State> = []
+      for state in self.terminals {
+        terminals.insert(mapping[state]!)
+      }
+      return terminals
+    }()
+  }
+
+  /// Reset each state node within the automata to a new unique value
+  /// while presetving inter-node relationships.
+  /// - returns: A new automata instance with each state node reset to a new unique identity.
+  public func remapped() -> Automata {
+    var copy = self
+    copy.remap()
+    return copy
+  }
+}
+
+/// An implementation for a Non-Deterministic Finite Automata.
+public typealias NFA<Reading> = Automata<Reading, ()>
+
+/// An implementation for a Push-Down Automata.
+public typealias PDA<Reading, Marker> = Automata<Reading, Marker>
