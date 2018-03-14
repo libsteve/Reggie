@@ -21,7 +21,7 @@ Reggie is available through [CocoaPods](http://cocoapods.org).
 To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Reggie', :git => 'https://github.com/Altece/Reggie.git'
+pod 'Reggie'
 ```
 
 ## Author
