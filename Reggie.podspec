@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Reggie'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A state machine automata simulation framework.'
 
   s.description      = <<-DESC
@@ -10,8 +10,8 @@ non-deterministic finite automata, push-down automata, and more.
 
   s.homepage         = 'https://github.com/altece/Reggie'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'altece' => 'sbrunwasser@gmail.com' }
-  s.source           = { :git => 'https://github.com/altece/Reggie.git', :tag => s.version.to_s }
+  s.author           = { 'Steven Brunwasser' => '' }
+  s.source           = { :git => 'https://github.com/altece/Reggie.git', :tag => "v#{s.version.to_s}" }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
