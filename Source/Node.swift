@@ -3,6 +3,9 @@ import Foundation
 /// A specific identifiable state within an automata.
 public struct State {
   fileprivate let id: UUID = UUID()
+
+  /// Create a state node for an automata.
+  public init() {}
 }
 
 extension State: Hashable {
