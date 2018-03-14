@@ -26,7 +26,7 @@ let anotherRepeatingPattern: NFA<Character> = {
 class LexerTests: XCTestCase {
 
   func testSimpleNoMatch() {
-    var generator = Lexer(reading: "b".characters)
+    var generator = Lexer(reading: "b")
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertNil(token)
     XCTAssertEqual(generator.iterator.next(), "b")
@@ -34,7 +34,7 @@ class LexerTests: XCTestCase {
   }
 
   func testSimpleMatch() {
-    var generator = Lexer(reading: "aaa".characters)
+    var generator = Lexer(reading: "aaa")
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertNotNil(token)
     XCTAssertEqual(String(token!), "aaa")
@@ -42,7 +42,7 @@ class LexerTests: XCTestCase {
   }
 
   func testSimplePartialMatch() {
-    var generator = Lexer(reading: "aaab".characters)
+    var generator = Lexer(reading: "aaab")
     let token = generator.next(matching: aRepeatingPattern)
     XCTAssertEqual(String(token!), "aaa")
     XCTAssertEqual(generator.iterator.next(), "b")
@@ -50,7 +50,7 @@ class LexerTests: XCTestCase {
   }
 
   func testSmallerSimplePartialMatch() {
-    var generator = Lexer(reading: "abbb".characters)
+    var generator = Lexer(reading: "abbb")
     let token = generator.next(matching: anotherRepeatingPattern)
     XCTAssertNotNil(token)
     XCTAssertEqual(String(token!), "a")

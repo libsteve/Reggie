@@ -89,7 +89,7 @@ extension Automata where Meta == () {
   public mutating func transition(from source: State,
                                   to destination: State,
                                   over transition: @escaping (Input) -> Bool) {
-    self.transition(from: source, to: destination) { (input: (Input, Meta)) in
+    self.transition(from: source, to: destination) { (input: (Input, Meta)) -> (Bool, Meta) in
       let (input, _) = input
       return (transition(input), ())
     }

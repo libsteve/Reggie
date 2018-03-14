@@ -5,7 +5,7 @@ class AutomataTests: XCTestCase {
 
   func testTransition() {
     let a = State(),
-        t = Transition<String, ()>(to: a) { ($0.0 == "a", ()) }
+        t = Transition<String, ()>(to: a) { input, meta in (input == "a", ()) }
     XCTAssertNotNil(t.traverse(with: "a", ()), "Transition over 'a' should be successful.")
     XCTAssertNil(t.traverse(with: "b", ()), "Transition over 'b' should fail.")
   }
