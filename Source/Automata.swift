@@ -89,8 +89,7 @@ extension Automata where Meta == () {
   public mutating func transition(from source: State,
                                   to destination: State,
                                   over transition: @escaping (Input) -> Bool) {
-    self.transition(from: source, to: destination) { (input: (Input, Meta)) -> (Bool, Meta) in
-      let (input, _) = input
+    self.transition(from: source, to: destination) { (input: Input, _: Meta) -> (Bool, Meta) in
       return (transition(input), ())
     }
   }
@@ -121,7 +120,7 @@ extension Automata {
   public func advance(with input: Input) -> Automata? {
     let nextStates = current.flatMap { state -> [(State, Meta)] in
       let (state, meta) = state
-      return transitions[state]?.flatMap { $0.traverse(with:input, meta) } ?? []
+      return transitions[state]?.compactMap { $0.traverse(with:input, meta) } ?? []
     }
     if nextStates.isEmpty { return nil }
     var result = self
