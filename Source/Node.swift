@@ -13,8 +13,8 @@ extension State: Hashable {
     return lhs.id == rhs.id
   }
 
-  public var hashValue: Int {
-    return id.hashValue
+  public func hash(into hasher: inout Hasher) {
+    return hasher.combine(id)
   }
 }
 
