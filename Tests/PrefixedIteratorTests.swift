@@ -16,4 +16,7 @@ class PrefixedIteratorTests: XCTestCase {
     XCTAssertNil(prefixed.next())
   }
 
+  static var allTests = [
+    ("testBuffered", testBuffered)
+  ]
 }

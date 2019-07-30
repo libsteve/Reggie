@@ -60,4 +60,10 @@ class LexerTests: XCTestCase {
     XCTAssertNil(generator.iterator.next())
   }
 
+  static var allTests = [
+    ("testSimpleNoMatch", testSimpleNoMatch),
+    ("testSimpleMatch", testSimpleMatch),
+    ("testSimplePartialMatch", testSimplePartialMatch),
+    ("testSmallerSimplePartialMatch", testSmallerSimplePartialMatch)
+  ]
 }

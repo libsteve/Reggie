@@ -51,6 +51,7 @@
 		AA55F9411E79F6BB00835E25 /* PrefixedIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixedIterator.swift; sourceTree = "<group>"; };
 		AA55F9441E79FF4B00835E25 /* LexerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexerTests.swift; sourceTree = "<group>"; };
 		AA55F9491E79FF7B00835E25 /* PrefixedIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixedIteratorTests.swift; sourceTree = "<group>"; };
+		AA5F8C7722F0F0FC00D1D54A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AAC2733A1E74E433004740E7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AAC2733B1E74E433004740E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AAC2733C1E74E433004740E7 /* Reggie.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Reggie.podspec; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 			children = (
 				AAC2733A1E74E433004740E7 /* LICENSE */,
 				AAC2733B1E74E433004740E7 /* README.md */,
+				AA5F8C7722F0F0FC00D1D54A /* Package.swift */,
 				AAC2733C1E74E433004740E7 /* Reggie.podspec */,
 				AAC273E81E74FFDC004740E7 /* Source */,
 				AAC273CF1E74FD9C004740E7 /* Tests */,

@@ -66,5 +66,12 @@ class AutomataTests: XCTestCase {
     XCTAssertFalse(m.contains(input: ["a", "b"]), "The automata should not contain 'ab'.")
     XCTAssertFalse(m.contains(input: ["a", "b", "d"]), "The automata should not contain 'abc'.")
   }
-  
+
+    static var allTests = [
+        ("testTransition", testTransition),
+        ("testAutomata", testAutomata),
+        ("testComplexAutomata", testComplexAutomata),
+        ("testLoopingAutomata", testLoopingAutomata),
+        ("testOnePathFails", testOnePathFails)
+    ]
 }
