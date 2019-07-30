@@ -18,10 +18,17 @@ such as a [Non-Deterministic Finite Automatan][3] and [Push-Down Automatan][4].
 ## Installation
 
 Reggie is available through [CocoaPods](http://cocoapods.org). 
-To install it, simply add the following line to your Podfile:
+To install it, simply add the following line to your `Podfile`:
 
 ```ruby
 pod 'Reggie'
+```
+
+Reggie is also available through the [Swift Package Manager](https://swift.org/package-manager/).
+To install it, simply add the following line to the dependencies array in `Package.swfit`:
+
+```swift
+.package(url: "https://github.com/stevebrun/Reggie.git", from: "0.2.3")
 ```
 
 ## Author
