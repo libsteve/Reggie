@@ -11,7 +11,7 @@ non-deterministic finite automata, push-down automata, and more.
   s.homepage         = 'https://github.com/altece/Reggie'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Steven Brunwasser' => '' }
-  s.source           = { :git => 'https://github.com/altece/Reggie.git', :tag => "v#{s.version.to_s}" }
+  s.source           = { :git => 'https://github.com/altece/Reggie.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
